@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 2.5rem;
 }
 
 p {
@@ -33,11 +33,11 @@ section {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: #6A4E23;
 }
 
-/* Section with graphs */
+/* Section with charts */
 .chart-container {
     display: flex;
     justify-content: center;
@@ -46,18 +46,19 @@ h2 {
     margin: 20px 0;
 }
 
-.chart-container iframe {
-    width: 100%; /* L'iframe prend toute la largeur disponible */
-    max-width: 900px; /* Limite la largeur maximale */
-    height: 2000px; /* Augmenter la hauteur des graphiques */
-    border: none;
+/* Ajuster la taille des graphiques */
+#graph1, #graph2, #graph3 {
+    width: 100%; /* L'élément prend toute la largeur */
+    max-width: 900px; /* Largeur maximale des graphiques */
+    height: 1000px; /* Hauteur du graphique */
+    margin: 0 auto; /* Centrer le graphique */
 }
 
 /* Responsiveness: Ajustement des graphiques selon la taille de l'écran */
 @media (max-width: 768px) {
-    .chart-container iframe {
-        width: 100%; /* Prend toute la largeur pour les petits écrans */
-        height: 1500px; /* Réduit la hauteur pour les petits écrans */
+    #graph1, #graph2, #graph3 {
+        width: 100%; /* Prendre toute la largeur pour les petits écrans */
+        height: 800px; /* Ajuster la hauteur pour les petits écrans */
     }
 }
 
