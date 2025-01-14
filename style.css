@@ -49,7 +49,7 @@ h2 {
 .chart-container iframe {
     width: 100%; /* L'iframe prend toute la largeur disponible */
     max-width: 900px; /* Limite la largeur maximale */
-    height: 500px; /* Ajuste la hauteur des graphiques */
+    height: 2000px; /* Augmenter la hauteur des graphiques */
     border: none;
 }
 
@@ -57,7 +57,7 @@ h2 {
 @media (max-width: 768px) {
     .chart-container iframe {
         width: 100%; /* Prend toute la largeur pour les petits écrans */
-        height: 400px; /* Réduit la hauteur pour les petits écrans */
+        height: 1500px; /* Réduit la hauteur pour les petits écrans */
     }
 }
 
