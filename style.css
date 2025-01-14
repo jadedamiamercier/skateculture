@@ -7,7 +7,6 @@ body {
     padding: 0;
     line-height: 1.6;
     width: 100%;
-    overflow-x: hidden; /* Empêcher les barres de défilement horizontales */
 }
 
 header {
@@ -27,43 +26,39 @@ p {
 
 main {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; /* Espacement même entre les sections */
-    align-items: center; /* Centrer les éléments */
+}
+
+section {
     margin-bottom: 40px;
 }
 
-/* Sous-titres h2 */
 h2 {
-    font-size: 1rem; /* Taille plus petite pour les sous-titres */
+    font-size: 1.8rem;
     color: #6A4E23;
-    text-align: center; /* Centrer les sous-titres */
-    margin: 10px 0;
 }
 
-/* Section avec les graphiques */
+/* Section with charts */
 .chart-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Augmenter l'espace entre les graphiques */
-    margin-bottom: 60px; /* Espacement en bas des graphiques */
-    flex-wrap: wrap; /* Permet aux graphiques de s'adapter si nécessaire */
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les graphiques */
+    margin: 20px 0;
 }
 
 /* Ajuster la taille des graphiques */
-iframe {
-    width: 100%; /* Prendre 100% de la largeur disponible */
-    height: 700px; /* Fixer la hauteur à 700px pour chaque graphique */
-    border: none; /* Enlever la bordure autour de l'iframe */
+#graph1, #graph2, #graph3 {
+    width: 100%; /* L'élément prend toute la largeur */
+    max-width: 900px; /* Largeur maximale des graphiques */
+    height: 1000px; /* Hauteur du graphique */
+    margin: 0 auto; /* Centrer le graphique */
 }
 
 /* Responsiveness: Ajustement des graphiques selon la taille de l'écran */
 @media (max-width: 768px) {
-    iframe {
+    #graph1, #graph2, #graph3 {
         width: 100%; /* Prendre toute la largeur pour les petits écrans */
-        height: 600px; /* Limiter la hauteur pour les petits écrans */
+        height: 800px; /* Ajuster la hauteur pour les petits écrans */
     }
 }
 
