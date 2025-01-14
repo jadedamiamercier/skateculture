@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    width: 100%;
 }
 
 header {
@@ -41,10 +42,12 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; /* Permet de réorganiser les graphiques sur des lignes différentes si nécessaire */
 }
 
 .chart-container {
-    flex: 1; /* Les deux graphiques ont la même taille */
+    flex: 1;
+    max-width: 45%; /* Limite la taille à 45% de la largeur de l'écran */
     min-width: 0;
     margin: 20px 0;
 }
