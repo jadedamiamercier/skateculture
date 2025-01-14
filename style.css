@@ -32,9 +32,12 @@ section {
     margin-bottom: 40px;
 }
 
+/* Sous-titres h2 */
 h2 {
-    font-size: 1.8rem;
+    font-size: 1rem; /* Taille plus petite pour les sous-titres */
     color: #6A4E23;
+    text-align: center; /* Centrer les sous-titres */
+    margin: 10px 0;
 }
 
 /* Section with charts */
@@ -50,7 +53,7 @@ h2 {
 #graph1, #graph2, #graph3 {
     width: 100%; /* L'élément prend toute la largeur */
     max-width: 900px; /* Largeur maximale des graphiques */
-    height: 1000px; /* Hauteur du graphique */
+    height: 600px; /* Hauteur ajustée pour les graphiques */
     margin: 0 auto; /* Centrer le graphique */
 }
 
@@ -58,7 +61,7 @@ h2 {
 @media (max-width: 768px) {
     #graph1, #graph2, #graph3 {
         width: 100%; /* Prendre toute la largeur pour les petits écrans */
-        height: 800px; /* Ajuster la hauteur pour les petits écrans */
+        height: 600px; /* Ajuster la hauteur pour les petits écrans */
     }
 }
 
