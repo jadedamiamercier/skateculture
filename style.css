@@ -53,19 +53,17 @@ h2 {
 }
 
 /* Ajuster la taille des graphiques */
-#graph1, #graph2, #graph3 {
-    width: 45%; /* Utiliser 45% de la largeur de la page */
-    height: auto; /* Ajuster la hauteur en fonction de l'image */
-    max-height: 700px; /* Limiter la hauteur des graphiques */
-    margin: 0 auto; /* Centrer les graphiques */
+iframe {
+    width: 100%; /* Prendre 100% de la largeur disponible */
+    height: 700px; /* Fixer la hauteur à 700px pour chaque graphique */
+    border: none; /* Enlever la bordure autour de l'iframe */
 }
 
 /* Responsiveness: Ajustement des graphiques selon la taille de l'écran */
 @media (max-width: 768px) {
-    #graph1, #graph2, #graph3 {
+    iframe {
         width: 100%; /* Prendre toute la largeur pour les petits écrans */
-        height: auto; /* Ajuster la hauteur pour les petits écrans */
-        max-height: 600px; /* Limiter la hauteur pour les petits écrans */
+        height: 600px; /* Limiter la hauteur pour les petits écrans */
     }
 }
 
