@@ -1,91 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Influence de la Sous-Culture Skate</title>
-    <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif; /* Police similaire à Montserrat */
-            color: #6A4E23; /* Marron */
-            background-color: #f5f5f5; /* Fond clair */
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            width: 100%;
-            overflow-x: hidden; /* Empêcher les barres de défilement horizontales */
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        p {
-            width: 10cm; /* Limiter à 10 cm de largeur */
-            margin: 0 auto;
-            text-align: justify;
-        }
-
-        main {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly; /* Espacement même entre les sections */
-            align-items: center; /* Centrer les éléments */
-            margin-bottom: 40px;
-        }
-
-        /* Sous-titres h2 */
-        h2 {
-            font-size: 1rem; /* Taille plus petite pour les sous-titres */
-            color: #6A4E23;
-            text-align: center; /* Centrer les sous-titres */
-            margin: 10px 0;
-        }
-
-        /* Section with charts */
-        .chart-container {
-            display: flex;
-            justify-content: center;
-            gap: 40px; /* Augmenter l'espace entre les graphiques */
-            margin-bottom: 60px; /* Espacement en bas des graphiques */
-            flex-wrap: wrap; /* Permet aux graphiques de s'adapter si nécessaire */
-        }
-
-        /* Ajuster la taille des graphiques */
-        #graph1, #graph2, #graph3 {
-            width: 45%; /* Utiliser 45% de la largeur de la page */
-            height: 700px; /* Augmenter la hauteur des graphiques */
-            margin: 0 auto; /* Centrer les graphiques */
-        }
-
-        /* Responsiveness: Ajustement des graphiques selon la taille de l'écran */
-        @media (max-width: 768px) {
-            #graph1, #graph2, #graph3 {
-                width: 100%; /* Prendre toute la largeur pour les petits écrans */
-                height: 600px; /* Ajuster la hauteur pour les petits écrans */
-            }
-        }
-
-        footer {
-            background-color: #6A4E23;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <h1>Influence de la Sous-Culture Skate</h1>
@@ -105,8 +25,7 @@
                 montrant leur rôle majeur dans l'économie de la culture skate.
             </p>
             <div class="chart-container">
-                <!-- Remplace l'iframe par une image -->
-                <img src="graphs/graph1.png" id="graph1" alt="Graphique 1" />
+                <iframe src="graph1/index.html" width="100%" height="700px" frameborder="0"></iframe>
             </div>
         </section>
 
@@ -118,8 +37,7 @@
                 comme Louis Vuitton et Dior, soulignent l'impact culturel et commercial du skate.
             </p>
             <div class="chart-container">
-                <!-- Remplace l'iframe par une image -->
-                <img src="graphs/graph2.png" id="graph2" alt="Graphique 2" />
+                <iframe src="graph2/index.html" width="100%" height="700px" frameborder="0"></iframe>
             </div>
         </section>
 
@@ -131,8 +49,7 @@
                 reflétant l'impact spatial et infrastructurel de la culture skate dans le monde.
             </p>
             <div class="chart-container">
-                <!-- Remplace l'iframe par une image -->
-                <img src="graphs/graph3.png" id="graph3" alt="Graphique 3" />
+                <iframe src="graph3/index.html" width="100%" height="700px" frameborder="0"></iframe>
             </div>
         </section>
     </main>
@@ -141,5 +58,4 @@
         <p>Projet réalisé pour explorer l'influence de la sous-culture skate. © 2025</p>
     </footer>
 </body>
-
 </html>
