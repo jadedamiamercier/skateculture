@@ -7,6 +7,7 @@ body {
     padding: 0;
     line-height: 1.6;
     width: 100%;
+    overflow-x: hidden; /* Empêcher les barres de défilement horizontales */
 }
 
 header {
@@ -26,9 +27,10 @@ p {
 
 main {
     padding: 20px;
-}
-
-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Espacement même entre les sections */
+    align-items: center; /* Centrer les éléments */
     margin-bottom: 40px;
 }
 
@@ -44,17 +46,16 @@ h2 {
 .chart-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacement entre les graphiques */
-    margin: 20px 0;
+    gap: 40px; /* Augmenter l'espace entre les graphiques */
+    margin-bottom: 60px; /* Espacement en bas des graphiques */
+    flex-wrap: wrap; /* Permet aux graphiques de s'adapter si nécessaire */
 }
 
 /* Ajuster la taille des graphiques */
 #graph1, #graph2, #graph3 {
-    width: 100%; /* L'élément prend toute la largeur */
-    max-width: 900px; /* Largeur maximale des graphiques */
-    height: 600px; /* Hauteur ajustée pour les graphiques */
-    margin: 0 auto; /* Centrer le graphique */
+    width: 45%; /* Utiliser 45% de la largeur de la page */
+    height: 700px; /* Augmenter la hauteur des graphiques */
+    margin: 0 auto; /* Centrer les graphiques */
 }
 
 /* Responsiveness: Ajustement des graphiques selon la taille de l'écran */
